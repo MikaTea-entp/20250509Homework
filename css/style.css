@@ -1,0 +1,386 @@
+/* 全体を中央ぞろえにする */
+/* nav全体を横並びにする */
+/* ヘッダー全体の整列 */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* 最大幅を指定 */
+    margin: 0 auto;    /* 中央寄せ！ */
+    padding: 0 50px;   /* 左右の余白 */
+}
+/* ナビゲーションリストのスタイル */
+.header-nav ul {
+    list-style: none;
+    font-size: 21px;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/* リンクの見た目 */
+.header-nav a {
+    text-decoration: none;
+    color: #222222;
+}
+
+/* 「セカイを変えるチーズを作ろう」の部分 */
+/* 背景画像の上に文字を配置するために背景にはhposition: relativeを使用 */
+.background {
+    position: relative;
+    margin: 0 auto; /* 中央寄せ */
+    width: 1200px; /* 最大幅を指定 */
+    aspect-ratio: 1365 / 500;  /* 画像の縦横比を保つ */
+    background-image: url('../img/mainbg.png');
+    background-size: cover;
+    background-position: center;
+}
+/* 背景画像の上に文字を配置するためにposition: absoluteを使用 */
+.title {
+    position: absolute;     /* ←ポイント！親（relative）に対して絶対配置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.line2 {
+    margin-top: 30px;
+    white-space: nowrap;
+}
+
+/* 本文 */
+.yellow {
+    color: #ffd61a;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 24px;    
+}
+.about-container {
+    text-align: center;
+}
+.ac {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #222222;
+}
+.ad {
+    font-size: 16px;
+    margin-top: 60px;
+    color: #222222;
+}
+.ae {
+    font-size: 16px;
+    margin-top: 40px;
+    color: #222222;
+}
+.af {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+}
+
+.about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 1200px; /* 最大幅を指定 */
+    aspect-ratio: 1540 / 255;  /* 画像の縦横比を保つ */    
+    margin-top: 80px;
+}
+
+.course {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+
+
+.section {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.image-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 500px; /* ← 画像の高さに合わせる */
+}
+
+.image-block img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* テキスト共通 */
+.text-block {
+  width: 430px;
+  padding: 0 40px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 左端を中央にする（画像が右側に来る） */
+.image-block.left {
+  flex-direction: row;
+  transform: translateX(-50%);
+}
+
+/* 右端を中央にする（画像が左側に来る） */
+.image-block.right {
+  flex-direction: row-reverse;
+  transform: translateX(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box1,
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* ← 縦の中央揃え */
+    margin-bottom: 60px;     /* ← セクション間の余白 */
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.box-left {
+  justify-content: flex-start;
+  transform: translateX(50vw); /* 画像の左端が中央に来る */
+}
+
+.box-right {
+  justify-content: flex-end;
+  transform: translateX(-50vw); /* 画像の右端が中央に来る */
+}
+
+.image {
+  width: 600px;
+  height: auto;
+}
+
+.text {
+  max-width: 430px;
+  margin: 0 50px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box1-text,
+.box2-text {
+    max-width: 430px;
+}
+
+.box1-text {
+    margin-left: 50px;
+}
+
+.box2-text {
+    margin-right: 50px;
+}
+
+.width600 {
+    width: 600px;
+    aspect-ratio: 682 / 460;
+    height: auto;
+    display: block;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.width430 {
+    width: 100%;
+}
+
+.mt60y {
+    margin-top: 60px;
+    color: #ffd61a;
+    text-align: center;
+    font-size: 24px;    
+}
+.mt30mb60 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: #222222;
+    font-size: 16px;
+}
+
+.news-wrapper {
+    display: flex;
+    justify-content: center;      /* 中央ぞろえ */
+    gap: 30px;                    /* 各ブロックの間隔 */
+    flex-wrap: wrap;              /* 必要なら折り返し */
+    max-width: 100%;              /* はみ出し防止 */
+    margin: 0 auto;
+}
+.news-container {
+    display: block;           /* ブロック要素にする */
+    flex-direction: column;    /* 縦方向に並べるには、flex-direction: column; を指定 */
+    align-items: flex-start; /* 左揃え */
+    margin-bottom: 60px;     /* 各ニュース間に余白 */
+}
+.mt30mb24 {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #222222;
+}
+.width300 {
+    width: 300px;
+    font-size: 16px;
+}
+
+.hover {
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    background-color: #ffd61a;
+    color:white;
+    transition: all 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.contact {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.fontsize24 {
+    font-size: 24px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+
+.grey {
+    font-size: 16px;
+    color:white;
+    margin-top: 140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #707070;
+    text-align: center;
+}
+
+
+.maps {
+    display: flex;
+    justify-content: center;      /* 中央ぞろえ */
+    gap: 30px;                    /* 各ブロックの間隔 */
+    flex-wrap: wrap;              /* 必要なら折り返し */
+    max-width: 100%;              /* はみ出し防止 */
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0;
+  }
+
+  /* ナビゲーションリストのスタイル */
+  .nav {
+    list-style: none;
+    font-size: 21px;
+    display: flex;
+    gap: 50px;
+    margin-top: 50pt;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+  
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-container {
+    width: 80%;         /* 中央寄せには幅指定が必要 */
+    margin: 0 auto;     /* 左右中央揃え */
+  }
