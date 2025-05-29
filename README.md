@@ -1,7 +1,7 @@
 # 20250509Homework
 
 ## ① 課題名 / Assignment Title
-チーズアカデミー – Cheese Academy
+チーズアカデミー失敗作 – A Rotten Cheese
 
 ## ② 課題内容（どんな作品か） / Project Description
 日本語:
@@ -15,9 +15,7 @@ However, during design and implementation, numerous issues surfaced, and the pro
 Despite the initial enthusiastic vision of “Changing the world with cheese,” major challenges with usability, layout consistency, and responsiveness were insurmountable.
 
 ## ③ アプリのデプロイURL / Deployment URL
-🔗 https://cheeseacademy-failure.example.com
-(仮URLです。実際の動作は保証していません。)
-(This is a placeholder URL. Actual functionality is not guaranteed.)
+🔗 https://mikatea-entp.github.io/20250509Homework/
 
 ## ④ アプリのログイン用IDまたはPassword（ある場合） / Login Credentials (if any)
 ログイン機能は実装されていません。
